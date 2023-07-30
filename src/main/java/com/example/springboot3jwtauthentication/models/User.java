@@ -58,7 +58,7 @@ public class User implements UserDetails {
 
   @Override
   public String getUsername() {
-      // email in our case
+      // our "username" for security is the email field
       return email;
   }
 
