@@ -3,6 +3,10 @@
 This project is part of a video series on YouTube about providing JSON Web Token
 support for Spring Boot projects.
 
+## YouTube Links
+
+1. Implementing JWT Authentication in Spring Boot 3: https://youtu.be/7fAB4WS29oM
+
 ## Developer Notes
 
 The project makes use of MySQL and PHPMyAdmin Docker images for database support,
