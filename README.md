@@ -16,10 +16,29 @@ so make sure you have the Docker Desktop running on your machine.
 - `cd spring-boot-3-jwt-authentication`
 - Open in your favorite editor supporting Java
 
+Note that if you are using this project to start your own, then make sure to generate your own JWT
+secret key that's used in the `application.properties`. Instructions are provided in that file
+for an easy one-liner to do this.
+
+Also, the `TestController` contains some "dummy" endpoints for just helping to verify role
+authorization. You shouldn't need this in any of your projects. It might be handy to just
+use as a reference for the `@PreAuthorize` stuff.
+
 ## Running the Project
 
 - Make sure Docker Desktop is running
 - `mvnw spring-boot:run`
+
+## References
+
+Lots of great work by the Spring Boot (and other server) communities around the interwebs. Here's a few I came across
+during the research phase of this video.
+
+- https://medium.com/@truongbui95/jwt-authentication-and-authorization-with-spring-boot-3-and-spring-security-6-2f90f9337421
+- https://github.com/osopromadze/Spring-Boot-Blog-REST-API
+- https://www.codejava.net/frameworks/spring-boot/spring-security-jwt-role-based-authorization
+- https://medium.com/spring-boot/spring-security-role-based-implementation-with-spring-boot-3-0-2d59fa5a851b
+
 
 ## LICENSE
 
