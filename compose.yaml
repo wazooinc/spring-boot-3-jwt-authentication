@@ -11,7 +11,7 @@ services:
       MYSQL_ROOT_PASSWORD: '${MYSQL_ROOT_PASSWORD}'
       MYSQL_USER: '${MYSQL_USER}'
     ports:
-      - 3306:3306
+      - "3306:3306"
     volumes:
       - db-data:/var/lib/db
     networks:
@@ -23,7 +23,7 @@ services:
     image: phpmyadmin/phpmyadmin
     restart: unless-stopped
     ports:
-      - 8081:80
+      - "8081:80"
     env_file: .env
     environment:
       PMA_HOST: database
