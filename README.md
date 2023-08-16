@@ -26,7 +26,7 @@ use as a reference for the `@PreAuthorize` stuff.
 
 ## Running the Project
 
-- Make sure Docker Desktop is running
+- **Make sure Docker Desktop is running**
 - `mvnw spring-boot:run`
 
 ## References
